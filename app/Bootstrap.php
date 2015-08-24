@@ -11,7 +11,6 @@ define ('site_path', $site_path);
 $doc_root = str_replace('/', DIRSEP, $_SERVER["DOCUMENT_ROOT"]);
 $path = str_replace($doc_root.DIRSEP, '', site_path);
 $path = str_replace(DIRSEP, '/', $path);
-//$path = str_replace('/app', '', $path);
 $path = '/'.$path;
 define ('mch_path', $path);
 
