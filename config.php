@@ -12,6 +12,6 @@ return array(
         'msgs' => 'mchat_msgs',
     ),
     'nick' => 'Anonym', // default nick
-    'token' => 1, // включить или выключить проверку token (1 - включено, 0 - выключено)
+    'token' => 1, //  (1 - on , 0 - off)
     'token_salt' => '123123123',
 );
