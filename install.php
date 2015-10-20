@@ -1,4 +1,5 @@
 <?php
+// install DB
 
 require_once 'app'.DIRECTORY_SEPARATOR.'Bootstrap.php';
 
@@ -26,7 +27,6 @@ CREATE TABLE IF NOT EXISTS `".$table_users."` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;";
 $db->query($query);
-//$db->query("truncate $table_users");
 
 $db->query("DROP TABLE IF EXISTS `".$table_msgs."`");
 $query="
@@ -38,4 +38,3 @@ CREATE TABLE IF NOT EXISTS `".$table_msgs."` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;";
 $db->query($query);
-//$db->query("truncate $table_msgs");
